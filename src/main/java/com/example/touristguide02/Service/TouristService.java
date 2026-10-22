@@ -17,12 +17,12 @@ import java.util.List;
             this.touristRepository = touristRepository;
         }
 
-        public ArrayList<TouristAttraction> getAllAttractions() {
-            return touristRepository.getAllAttractions();
+        public List <TouristAttraction> getAllAttractions() {
+            return touristRepository.getAllattractions();
         }
 
         public TouristAttraction getAttractionByName(String name) {
-            return touristRepository.getAttractionByName(name);
+            return touristRepository.getAttractionsByname(name);
         }
 
         public TouristAttraction addAttraction(TouristAttraction attraction) {
@@ -40,6 +40,7 @@ import java.util.List;
         public List<String> getCities(){
             return touristRepository.getCities();
         }
+
         public List<String>getTags(){
             return touristRepository.getTags();
         }
